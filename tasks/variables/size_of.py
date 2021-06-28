@@ -20,6 +20,7 @@ def size_in_kb(some_object: Any) -> str:
     """
     result = round(getsizeof(some_object) / 1024, 2)
     return f"{result} кб"
+#   return f"{getsizeof(some_object) / 1024:.2f} кб"
 
 
 if __name__ == '__main__':
